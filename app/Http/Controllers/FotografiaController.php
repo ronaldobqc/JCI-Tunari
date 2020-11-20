@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Fotografia;
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
 
 class FotografiaController extends Controller
 {
@@ -40,7 +41,10 @@ class FotografiaController extends Controller
         if($request->hasfile('foto')){
             $file = $request->file('foto');
             $name = time().$file->getClientOriginalName();
-            $file->move(public_path().'/images/', $name);
+            $img = Image::make($file);
+            $img->resize(1280, 720);
+            $img->insert(public_path().'/assets/img/logo.png', 'bottom-left', 110, 70);
+            $img->save(public_path().'/images/'.$name);
         }
         
         //$fotografia = Fotografia::create($request->all());
