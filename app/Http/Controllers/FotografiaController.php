@@ -43,7 +43,7 @@ class FotografiaController extends Controller
             $name = time().$file->getClientOriginalName();
             $img = Image::make($file);
             $img->resize(1280, 720);
-            $img->insert(public_path().'/assets/img/logo.png', 'bottom-left', 110, 70);
+            $img->insert(public_path().'/assets/img/Agua5.png', 'bottom-left', 110, 70);
             $img->save(public_path().'/images/'.$name);
         }
         
