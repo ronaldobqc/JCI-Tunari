@@ -717,7 +717,7 @@
 							<p>
 								
 							</p>
-							<a href="jci-events.html" class="post_btn"><img src="assets/img/line-shape.png" alt="shape line" /> Click aquí</a>
+							<a href="{{ route('events') }}" class="post_btn"><img src="assets/img/line-shape.png" alt="shape line" /> Click aquí</a>
 						</div>
 					</div><!-- End Col -->
 					

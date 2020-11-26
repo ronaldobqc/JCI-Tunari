@@ -138,7 +138,7 @@
 					</div>
 
 					<p>
-						Descarga la convocatoria <a href="doc/premios_inspirate_1.pdf" target = "blank" class="post_btn"><img src="assets/img/line-shape.png" alt="shape line" /> Click aquí</a>
+						Descarga la convocatoria <a href="doc/PREMIOS.pdf" target = "blank" class="post_btn"><img src="assets/img/line-shape.png" alt="shape line" /> Click aquí</a>
 						</br>
 					</p>
 				</div><!-- End Section Title -->
